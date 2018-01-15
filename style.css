@@ -1,0 +1,47 @@
+.pink-background {
+    background-color: rgb(232, 178, 253);
+}
+
+.black-background {
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    border: 2px dashed rgba(114, 186, 94, 0.35);
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-doge {
+    grid-column: 2;
+}
+
+.right-doge {
+    grid-column: 4;
+}
+
+.big-doge {
+    display: none;
+    width: 400px;
+}
+
+.little-doge {
+    grid-column: 3;
+    grid-row: 3;
+    width: 200px;
+    transform:translate(0px, 80px);
+}
+
+.little-doge-greyscale {
+    grid-column: 3;
+    grid-row: 3;
+    width: 200px;
+    transform:translate(0px, 80px);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    cursor: pointer;
+}
